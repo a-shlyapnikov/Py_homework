@@ -12,4 +12,6 @@ def get_point_coorditate():
 first_point = get_point_coorditate()
 second_point = get_point_coorditate()
 distance = math.sqrt(((second_point[0] - first_point[0])**2) +(second_point[1] - first_point[1])**2)
-print(f'Расстояние между точкой А({first_point[0]}, {first_point[1]}) и B({second_point[0]}, {second_point[1]}) равно {round(distance, 2)}')
+print(f'Расстояние между точкой А({first_point[0]}, '
+      f'{first_point[1]}) и B({second_point[0]}, '
+      f'{second_point[1]}) равно {round(distance, 2)}')
