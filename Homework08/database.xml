@@ -1,0 +1,14 @@
+<xml>
+<name = "Алексей Алексеев">
+   <position>"разработчик"<position>
+   <salary>"1000"<salary>
+</xml><name = "Иван Иванов">
+   <position>"дизайнер"<position>
+   <salary>"900"<salary>
+</xml><name = "Надежда Надеждина">
+   <position>"менеджер"<position>
+   <salary>"1200"<salary>
+</xml><name = "Артем Артемов">
+   <position>"руководитель отдела"<position>
+   <salary>"1500"<salary>
+</xml>
