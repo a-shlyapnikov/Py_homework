@@ -1,6 +1,12 @@
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, ContextTypes
 from isOdd import isOdd
+import os
+from dotenv import load_dotenv
+
+
+load_dotenv()
+app = ApplicationBuilder().token(os.getenv('TOKEN')).build()
 
 async def hello(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.message.reply_text(f'Hello {update.effective_user.first_name}')
@@ -14,7 +20,7 @@ async def isOdd_comand(update: Update, context: ContextTypes.DEFAULT_TYPE):
         await update.message.reply_text(f'Число {number} нечетное')
     else:
         await update.message.reply_text(f'Число {number} четное')
-app = ApplicationBuilder().token("5868534886:AAGeWvqtbi6LbPtYBWnx8Ks20cOF9Qy3Z1w").build()
+
 app.add_handler(CommandHandler("hello", hello))
 app.add_handler(CommandHandler("isOdd", isOdd_comand))
 
